@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fabian Urteaga - Data Analytics & Industrial Engineering Portfolio - Transformando datos en soluciones empresariales innovadoras">
+    <meta name="keywords" content="Data Analytics, Industrial Engineering, Machine Learning, AI, Business Intelligence">
+    <meta name="author" content="Fabian Urteaga">
+    <meta property="og:title" content="Fabian Urteaga | Data Analytics & Engineering">
+    <meta property="og:description" content="Portfolio profesional de Fabian Urteaga - Especialista en Data Analytics e Ingeniería Industrial">
+    <meta property="og:image" content="path-to-your-og-image.jpg">
+    <title>Fabian Urteaga | Data Analytics & Engineering</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="fabian.jpg" as="image">
+    <link rel="preload" as="font" href="/fonts/SpaceGrotesk-Bold.woff2" type="font/woff2" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Non-critical CSS -->
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" 
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" 
+        rel="stylesheet" media="print" onload="this.media='all'">
+</head>
+<body class="overflow-x-hidden bg-dark text-light">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-dark">
+        <div class="loading-animation">
+            <svg class="w-16 h-16" viewBox="0 0 24 24">
+                <!-- Add your custom loading animation SVG here -->
+            </svg>
+        </div>
+    </div>
+
+    <!-- Cursor Effects -->
+    <div class="cursor-glow"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress fixed top-0 left-0 w-full h-1 z-50"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 transition-all duration-300" id="main-nav">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-2xl font-bold gradient-text group">
+                    <span class="relative inline-block">
+                        FU
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary to-accent transform origin-left scale-x-0 transition-transform group-hover:scale-x-100"></span>
+                    </span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Inicio</a>
+                    <a href="#about" class="nav-link">Sobre Mí</a>
+                    <a href="#projects" class="nav-link">Proyectos</a>
+                    <a href="#experience" class="nav-link">Experiencia</a>
+                    <a href="#skills" class="nav-link">Habilidades</a>
+                    <a href="#contact" class="neo-brutalism px-6 py-2">Contáctame</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden mobile-menu-button" aria-label="Toggle Menu">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu fixed inset-0 bg-dark/95 z-30 transform translate-x-full transition-transform duration-300">
+            <!-- Mobile menu content -->
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="min-h-screen flex items-center justify-center relative pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="particles-container"></div>
+            <div class="gradient-bg"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="mb-8 inline-block">
+                <div class="animated-border hover-float">
+                    <div class="card-content p-1">
+                        <img src="fabian.jpg" 
+                            alt="Fabian Urteaga" 
+                            class="w-48 h-48 rounded-full object-cover mx-auto"
+                            loading="eager">
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 gradient-text animate-fade-in">
+                Analista de Datos
+                <span class="block mt-2">Junior</span>
+            </h1>
+
+            <p class="text-xl md:text-2xl mb-12 animate-fade-in-delay-1">
+                ¡Hola! Mi nombre es Fabian Urteaga y espero que te guste mi portafolio. 
+                <span class="typewriter-text"></span>
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-6 animate-fade-in-delay-2">
+                <a href="#projects" class="neo-brutalism px-8 py-4">
+                    Mis Proyectos
+                    <span class="ml-2">→</span>
+                </a>
+                <a href="#contact" class="neo-brutalism px-8 py-4 variant-2">
+                    Contáctame
+                    <span class="ml-2">→</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+<section id="about" class="py-24 relative">
+    <div class="container mx-auto px-6">
+        <h2 class="section-title">SOBRE MÍ</h2>
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <p class="text-lg leading-relaxed">
+                    Bienvenido a mi portafolio. Soy un entusiasta de la tecnología y la innovación, con una sólida experiencia en análisis de datos y diseño web. A lo largo de mi carrera, he tenido la oportunidad de liderar proyectos desafiantes y colaborar con equipos talentosos para lograr resultados excepcionales. Me encanta enfrentar desafíos complejos y encontrar soluciones innovadoras que marquen la diferencia. A continuación podrás explorar algunos de mis proyectos más destacados, conocer más sobre mi experiencia profesional y descubrir cómo puedo contribuir a tu próximo gran proyecto. ¡Espero que disfrutes navegando por mi trabajo tanto como yo disfruté creándolo!
+                </p>
+                
+                <div class="stats-grid grid grid-cols-2 gap-6">
+                    <div class="stat-card glass-card p-6 text-center">
+                        <span class="text-4xl font-bold gradient-text counter">5+</span>
+                        <p class="text-sm mt-2">Proyectos Completados</p>
+                    </div>
+                    <div class="stat-card glass-card p-6 text-center">
+                        <span class="text-4xl font-bold gradient-text counter">100%</span>
+                        <p class="text-sm mt-2">Cumplimiento con las empresas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="fabian_en_compu.png" alt="Mi Foto" class="profile-image">
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 relative">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            
+            <div class="carousel">
+                <!-- Project Card 1 -->
+                <article class="project-card glass-card p-6 group">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="imagen_proyectos/limpieza_de_datos.png" 
+                            alt="Project preview" 
+                            class="w-full transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold">Limpieza de datos</h3>
+                        <p class="text-gray-300">Pequeño proyecto básico para el análisis de datos . Siempre antes de trabajar con cualquier base de datos es importante hacer una limpieza de datos.</p>
+                        
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <a href="#" class="project-link">Ver Código</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                <!-- Project Card 2 -->
+                </article>
+                <article class="project-card glass-card p-6 group">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="imagen_proyectos/analisis_de_datos.jpeg" 
+                            alt="Project preview" 
+                            class="w-full transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold">Análisis de Datos</h3>
+                        <p class="text-gray-300">Luego de tener una base de datos limpia, realizaremos un análisis exploratorio de datos (EDA) para comprender mejor las características y distribuciones de los datos.</p>
+                        
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <a href="#" class="project-link">Ver Código</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project Card 3 -->
+            </article>
+            <article class="project-card glass-card p-6 group">
+                <div class="relative overflow-hidden rounded-lg mb-6">
+                    <img src="imagen_proyectos/visualizacion_datos.jpeg" 
+                        alt="Project preview" 
+                        class="w-full transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold">Visualización de datos</h3>
+                    <p class="text-gray-300">Luego del análisis necesitamos visualizaciones efectivas utilizando herramientas como Power BI, Tableau o Python (matplotlib, seaborn).</p>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="project-link">Ver Código</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </article>
+            <!-- Project Card 4 -->
+            </article>
+            <article class="project-card glass-card p-6 group">
+                <div class="relative overflow-hidden rounded-lg mb-6">
+                    <img src="imagen_proyectos/ciencia_datos.jpeg" 
+                        alt="Project preview" 
+                        class="w-full transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold">Ciencia de Datos</h3>
+                    <p class="text-gray-300">Aplicaremos técnicas de modelado estadístico y machine learning para obtener insights más profundos.Esto nos permitira identificar oportunidades de mejora y áreas de interés para la toma de decisiones</p>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="project-link">Ver Código</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </article>
+            <!-- Project Card 5 -->
+            </article>
+            <article class="project-card glass-card p-6 group">
+                <div class="relative overflow-hidden rounded-lg mb-6">
+                    <img src="imagen_proyectos/ingenieria_datos.jpeg" 
+                        alt="Project preview" 
+                        class="w-full transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold">Ingeniería de datos</h3>
+                    <p class="text-gray-300"> Analizaremos los resultados obtenidos y extraer conclusiones significativas, y por útlimo prepararemos informes y presentaciones para comunicar los hallazgos a las partes interesadas.</p>
+                    
+                <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">AWS</span>
+                </div>
+                    
+                <div class="flex items-center space-x-4">
+                        <a href="#" class="project-link">Ver Código</a>
+                        <a href="#" class="project-link">GitHub</a>
+                </div>
+                </div>
+            </article>
+                <!-- Additional project cards can be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Nuevo) -->
+    <section id="experience" class="py-24 gradient-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            
+            <div class="experience-timeline">
+                <!-- Timeline item / Experiencia 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card p-6">
+                        <h3 class="text-xl font-bold">Practicante de gestión</h3>
+                        <p class="text-primary">Empresa OCA GlOBAL • Mayo 2024 - Presente</p>
+                        <ul class="mt-4 space-y-2">
+                            <li>• Desarrollé el Sistema Integrado de Gestión de las diferentes áreas de la empresa para demostrar los pasos secuenciales de las actividades realizadas diariamente.</li>
+                            <li>• Reduje el tiempo de carga de la base de datos de los diferentes gráficos de indicadores de ventas en el Power BI general de 1h 30m a 10 m.</li>
+                            <li>• Desarrolle un indicador en Power BI para un supervisor que realizaba trabajos diarios y este indicador me permitía hacer una revisión de los implementos o irregularidades que le faltaba a sus técnicos.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline item / Experiencia 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card p-6">
+                        <h3 class="text-xl font-bold">Operador de logística</h3>
+                        <p class="text-primary">Empresa BSH electrodomésticos • Enero 2023 - Abril 2023 </p>
+                        <ul class="mt-4 space-y-2">
+                            <li>• Aumenté el tiempo de llenado de materiales en un 50%, haciendo que se elimine el tiempo de recarga de materiales y que la producción de la fábrica metalúrgica aumentara en un 40% los productos terminados.</li>
+                            <li>• Ayudé a implementar señaléticas y planificar una ruta del vehículo logístico, disminuyendo los casos de accidentes de los operarios con los vehículos logísticos. El año 2022 se reportó 15 casos de accidentes y cuando se implementó la señalética no se tiene casos de accidentes hasta el momento.</li>
+                            <li>• Realización de inventarios , control y seguimiento de los niveles de inventario periódicos para asegurar la precisión de los registros.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+    <!-- Skills Section (Mejorado) -->
+    <section id="skills" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Skills</h2>
+            
+            <!-- Tools & Technologies -->
+    <div class="tools-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <!-- Tool card -->
+        <div class="tool-card glass-card p-4 text-center hover-float">
+            <img src="imagen_icons/html.png" alt="html" class="w-12 h-12 mx-auto mb-2">
+            <span>HTML</span>
+        </div>
+        <div class="tool-card glass-card p-4 text-center hover-float">
+            <img src="imagen_icons/css.png" alt="CSS" class="w-12 h-12 mx-auto mb-2">
+            <span>CSS</span>
+        </div>
+        <div class="tool-card glass-card p-4 text-center hover-float">
+            <img src="imagen_icons/javascript.png" alt="javascript" class="w-12 h-12 mx-auto mb-2">
+            <span>Javascript</span>
+        </div>
+        <div class="tool-card glass-card p-4 text-center hover-float">
+            <img src="imagen_icons/typescript.png" alt="typescript" class="w-12 h-12 mx-auto mb-2">
+            <span>Typescript</span>
+        </div>
+        <div class="tool-card glass-card p-4 text-center hover-float">
+            <img src="imagen_icons/react.png" alt="react" class="w-12 h-12 mx-auto mb-2">
+            <span>React</span>
+        </div>
+        <div class="tool-card glass-card p-4 text-center hover-float">
+            <img src="imagen_icons/excel.png" alt="Excel" class="w-12 h-12 mx-auto mb-2">
+            <span>Excel</span>
+        </div>
+        <div class="tool-card glass-card p-4 text-center hover-float">
+            <img src="imagen_icons/sql.png" alt="sql" class="w-12 h-12 mx-auto mb-2">
+            <span>SQL</span>
+        </div>
+        <div class="tool-card glass-card p-4 text-center hover-float">
+            <img src="imagen_icons/power_bi.png" alt="Power BI" class="w-12 h-12 mx-auto mb-2">
+            <span>Power BI</span>
+        </div>
+        <div class="tool-card glass-card p-4 text-center hover-float">
+            <img src="imagen_icons/matlab.png" alt="Matlab" class="w-12 h-12 mx-auto mb-2">
+            <span>Matlab</span>
+        </div>
+        <div class="tool-card glass-card p-4 text-center hover-float">
+            <img src="imagen_icons/r_studio.png" alt="R studio" class="w-12 h-12 mx-auto mb-2">
+            <span>R studio</span>
+        </div>
+        <div class="tool-card glass-card p-4 text-center hover-float">
+            <img src="imagen_icons/python.png" alt="python" class="w-12 h-12 mx-auto mb-2">
+            <span>Python</span>
+        </div>
+        <div class="tool-card glass-card p-4 text-center hover-float">
+            <img src="imagen_icons/jupyter.png" alt="jupyter" class="w-12 h-12 mx-auto mb-2">
+            <span>jupyter</span>
+        </div>
+        <!-- Más herramientas... -->
+    </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section (Nuevo) -->
+    <section id="testimonials" class="py-24 gradient-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Comentarios de mi Perfil Profesional</h2>
+            
+            <div class="testimonials-slider">
+                <!-- Testimonial Card -->
+                <div class="glass-card p-8">
+                    <div class="flex items-center mb-6">
+                        <img src="imagen_comentarios_profesionales/oca_global_logo.jpeg" alt="Client" class="w-16 h-16 rounded-full">
+                        <div class="ml-4">
+                            <h3 class="font-bold">Edgar Santos</h3>
+                            <p class="text-primary">Gerente, OCA GLOBAL</p>
+                        </div>
+                    </div>
+                    <p class="italic">"La experiencia de Fabián en análisis de datos transformó nuestras capacidades de análisis empresarial, permitiéndonos tomar decisiones más informadas y estratégicas. Durante su tiempo en nuestra empresa, Fabián mostró un dominio excepcional de herramientas como Python, SQL, y Power BI, además de una habilidad única para interpretar datos complejos y convertirlos en información procesable."</p>
+                </div>
+                <div class="glass-card p-8">
+                    <div class="flex items-center mb-6">
+                        <img src="imagen_comentarios_profesionales/BSH.jpg" alt="Client" class="w-16 h-16 rounded-full">
+                        <div class="ml-4">
+                            <h3 class="font-bold">Enrique Bálcazar</h3>
+                            <p class="text-primary">Head of Supply Chain, BSH</p>
+                        </div>
+                    </div>
+                    <p class="italic">"Su enfoque metódico y orientado a resultados resultó en la optimización de varios procesos clave, logrando una reducción significativa en los tiempos de análisis y un aumento en la precisión de nuestras proyecciones. Por ejemplo, lideró la implementación de un sistema automatizado de supply chain que redujo el tiempo de generación de una cadena de ensamblaje en un 40%."</p>
+                </div>
+                <!-- Más testimonios... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Mejorado) -->
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto glass-card p-8">
+
+                <h2 class="section-title">Contáctemonos</h2>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <p class="text-lg mb-6">¿Tienes un proyecto interesante? ¡Hablemos!</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <a href="mailto:contact@fabianurteaga.com" class="hover:text-primary transition-colors">
+                                    fabianurteaga1808@gmail.com
+                                </a>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <span>Callao, Perú</span>
+                            </div>
+                            <p class="text-lg mb-6">Mis Redes Sociales : </p>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/fabian-urteaga-454750252/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <!-- LinkedIn icon -->
+                                        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 11.28h-3v-5.5c0-1.32-.03-3.01-1.84-3.01-1.84 0-2.12 1.43-2.12 2.91v5.6h-3v-10h2.88v1.37h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.58z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/fabianurteaga" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <!-- GitHub icon -->
+                                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.775.418-1.305.76-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.123-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.005-.404 1.02.005 2.048.138 3.005.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.649.241 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.803 5.625-5.475 5.92.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.218.694.825.576 4.765-1.588 8.2-6.084 8.2-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.notion.so/FABIAN-URTEAGA-DATA-SCIENCE-DISE-ADOR-WEB- 21800bf1fdec4485bddc6dc7ece7da96?pvs=4" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    <img src="imagen_icons/notion2.png" alt="Notion" class="notion-icon">
+                                </a>
+                                <!-- Más redes sociales -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" class="space-y-6">
+                        <div class="form-group">
+                            <label for="name" class="sr-only">Nombre</label>
+                            <div class="animated-border">
+                                <div class="card-content p-1">
+                                    <input type="text" id="name" name="name" required
+                                        class="form-input" placeholder="Tu Nombre">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <div class="animated-border">
+                                <div class="card-content p-1">
+                                    <input type="email" id="email" name="email" required
+                                        class="form-input" placeholder="Tu Email">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Mensaje</label>
+                            <div class="animated-border">
+                                <div class="card-content p-1">
+                                    <textarea id="message" name="message" required
+                                            class="form-textarea" placeholder="Tu Mensaje"
+                                            rows="4"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="neo-brutalism w-full py-4 text-lg">
+                            Enviar Mensaje
+                            <span class="ml-2">→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 glass-card mt-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold gradient-text">Fabian Urteaga</h3>
+                    <p class="text-sm text-gray-400">
+                        Transformando datos en insights accionables y soluciones innovadoras.
+                    </p>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Navegación</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-primary transition-colors">Inicio</a></li>
+                        <li><a href="#about" class="hover:text-primary transition-colors">Acerca de</a></li>
+                        <li><a href="#projects" class="hover:text-primary transition-colors">Proyectos</a></li>
+                        <li><a href="#contact" class="hover:text-primary transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Servicios</h4>
+                    <ul class="space-y-2">
+                        <li>Data Analysis</li>
+                        <li>Machine Learning</li>
+                        <li>Business Intelligence</li>
+                        <li>Process Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold">Contáctame</h4>
+                    <p class="text-sm text-gray-400">Mandame un mensaje por correo si te gusta mi perfil.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Tu email" 
+                            class="form-input rounded-r-none">
+                        <button type="submit" 
+                                class="px-4 bg-primary text-white rounded-r-lg hover:bg-primary/90 transition-colors">
+                            →
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400">
+                    &copy; 2024 Fabian Urteaga. Derechos reservados.
+                </p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="/privacy" class="text-sm text-gray-400 hover:text-white transition-colors">
+                        Política de privacidad
+                    </a>
+                    <a href="/terms" class="text-sm text-gray-400 hover:text-white transition-colors">
+                        Términos de servicio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modales y Overlays -->
+    <div id="success-modal" class="fixed inset-0 z-50 hidden">
+        <!-- Modal de éxito para formularios -->
+    </div>
+
+    <!-- Scripts -->
+    <script type="module">
+        // Importaciones
+        import { gsap } from 'https://cdn.skypack.dev/gsap';
+        import ScrollTrigger from 'https://cdn.skypack.dev/gsap/ScrollTrigger';
+        
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animaciones GSAP
+        const animations = {
+            init() {
+                // Hero animations
+                gsap.from('.hero-content > *', {
+                    y: 100,
+                    opacity: 0,
+                    duration: 1,
+                    stagger: 0.2,
+                    ease: 'power4.out'
+                });
+
+                // Scroll animations
+                gsap.utils.toArray('.animate-on-scroll').forEach(element => {
+                    gsap.from(element, {
+                        scrollTrigger: {
+                            trigger: element,
+                            start: 'top 80%',
+                            toggleActions: 'play none none reverse'
+                        },
+                        y: 50,
+                        opacity: 0,
+                        duration: 1,
+                        ease: 'power3.out'
+                    });
+                });
+            }
+        };
+
+        // Cursor personalizado
+        const cursor = {
+            init() {
+                const cursor = document.querySelector('.cursor-dot');
+                const cursorGlow = document.querySelector('.cursor-glow');
+                
+                document.addEventListener('mousemove', e => {
+                    gsap.to(cursor, {
+                        x: e.clientX,
+                        y: e.clientY,
+                        duration: 0.1
+                    });
+                    gsap.to(cursorGlow, {
+                        x: e.clientX,
+                        y: e.clientY,
+                        duration: 0.3
+                    });
+                });
+            }
+        };
+
+        // Inicialización
+        document.addEventListener('DOMContentLoaded', () => {
+            animations.init();
+            cursor.init();
+            
+            // Remover pantalla de carga
+            const loadingScreen = document.getElementById('loading-screen');
+            gsap.to(loadingScreen, {
+                opacity: 0,
+                duration: 0.5,
+                onComplete: () => loadingScreen.remove()
+            });
+        });
+
+        // Form handling
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            // Aquí iría la lógica de envío del formulario
+        });
+
+        // Intersection Observer para animaciones
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(
+            el => observer.observe(el)
+        );
+    </script>
+</body>
+</html>
